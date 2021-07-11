@@ -1,7 +1,10 @@
 package com.ozgegn.asteroidradar.data
 
+import android.os.Parcelable
 import com.ozgegn.asteroidradar.data.local.AsteroidEntity
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class Asteroid(
     val id: Long,
     val codeName: String,
@@ -11,7 +14,7 @@ data class Asteroid(
     val distanceFromEarth: Double,
     val relativeVelocity: Double,
     val closeApproachDate: String
-)
+): Parcelable
 
 
 fun List<Asteroid>.toEntityModel(): Array<AsteroidEntity> {

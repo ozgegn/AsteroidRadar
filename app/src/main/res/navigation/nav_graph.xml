@@ -16,8 +16,9 @@
         android:id="@+id/detailFragment"
         android:name="com.ozgegn.asteroidradar.ui.detail.DetailFragment"
         android:label="DetailFragment">
+
         <argument
-            android:name="asteroidId"
-            app:argType="long" />
+            android:name="selectedAsteroid"
+            app:argType="com.ozgegn.asteroidradar.data.Asteroid" />
     </fragment>
 </navigation>

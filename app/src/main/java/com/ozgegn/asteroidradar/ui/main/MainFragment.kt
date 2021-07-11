@@ -38,7 +38,7 @@ class MainFragment : Fragment() {
         binding.lifecycleOwner = this
 
         val adapter = AsteroidListAdapter(AsteroidClickListener {
-            findNavController().navigate(MainFragmentDirections.actionMainFragmentToDetailFragment(it.id))
+            findNavController().navigate(MainFragmentDirections.actionMainFragmentToDetailFragment(it))
         })
 
         binding.listAsteroid.adapter = adapter

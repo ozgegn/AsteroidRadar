@@ -26,6 +26,7 @@
                 android:id="@+id/imageOfTheDay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:contentDescription="@{mainViewModel.imageOfTheDay.title}"
                 android:scaleType="fitXY"
                 app:loadUrl="@{mainViewModel.imageOfTheDay.url}"
                 tools:src="@drawable/ic_launcher_foreground" />
